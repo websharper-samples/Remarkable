@@ -1,6 +1,6 @@
-# WebSharper @sampleName@
+# WebSharper Remarkable
 
-Sample for [WebSharper](https://websharper.com) bindings for @libLink@.
+Sample for [WebSharper](https://websharper.com) bindings for Remarkable.
 
-* [Source repository on GitHub](@repoUrl@)
-* [See it running live](@liveUrl@)
+* [Source repository on GitHub](https://github.com/websharper-samples/Remarkable)
+* [See it running live](https://websharper-samples.github.io/Remarkable)

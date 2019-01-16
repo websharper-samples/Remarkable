@@ -1,4 +1,4 @@
-# WebSharper Remarkable
+# WebSharper Remarkable [![Build status](https://ci.appveyor.com/api/projects/status/4nsc4ugn9shfppfj?svg=true)](https://ci.appveyor.com/project/IntelliFactory/remarkable)
 
 Sample for [WebSharper](https://websharper.com) bindings for Remarkable.
 

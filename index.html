@@ -1,27 +1,56 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Remarkable</title>
-        <style>
-            .input{
-                width: 750px;
-            }
-            .output {
-                min-height: 100px;
-                width: 750px;
-                background-color: whitesmoke;
-            }
-            li.L0, li.L1, li.L2, li.L3,
-            li.L5, li.L6, li.L7, li.L8 {
-                list-style-type: decimal !important;
-            }
-        </style>
-        <link rel="stylesheet" href="Content/Remarkable.css" />
-        <script src="Content/Remarkable.head.js"></script>
-    </head>
-    <body>
-        <div id="main"></div>
-        <script src="Content/Remarkable.js"></script>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Remarkable · WebSharper</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.12.0/styles/github.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <script type="text/javascript" src="Scripts/Remarkable.head.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <div class="app-brand">
+        <span class="app-logo"><i class="fa-brands fa-markdown"></i></span>
+        <div class="app-titles">
+          <h1>Remarkable</h1>
+          <p>Live Markdown with <a href="https://websharper.com" target="_blank" rel="noreferrer">WebSharper</a></p>
+        </div>
+      </div>
+      <a class="btn btn-ghost" href="https://github.com/websharper-samples/Remarkable" target="_blank" rel="noreferrer">
+        <i class="fa-brands fa-github"></i><span>Source</span>
+      </a>
+    </header>
+
+    <main class="content">
+      <section class="card">
+        <div class="card-head">
+          <div>
+            <h2>Markdown</h2>
+            <p>Type Markdown — the preview updates as you type.</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <textarea class="editor" ws-var="Source" spellcheck="false"></textarea>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-head">
+          <div>
+            <h2>Preview</h2>
+            <p>Rendered by Remarkable, highlighted by highlight.js.</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="output" ws-hole="Output"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="Scripts/Remarkable.min.js"></script>
+</body>
 </html>
